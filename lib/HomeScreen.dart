@@ -175,144 +175,147 @@ class _HomeScreenState extends State<HomeScreen> {
                   )),
             ],
           ),
-          body: Container(
-            height: 630.0,
-            width: 500.0,
-            color: Colors.blue,
-            child: Column(
-              children: [
-                Container(
-                  height: 300.0,
-                  width: 500.0,
-                  color: Colors.white,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        top: 20.0,
-                        left: 5.0,
-                        child: IconButton(
-                            icon: Icon(
-                              Icons.menu,
-                              color: Color(0xff50048e),
-                              size: 50.0,
-                            ),
-                            onPressed: () {
-                              _globalKey.currentState.openDrawer();
-                            }),
-                      ),
-                      Positioned(
-                        top: 120,
-                        left: 20,
-                        child: Text(
-                          "Hello\ntr\nWelcome back",
-                          style: TextStyle(
-                              color: Color(
-                                0xff733d77,
+          body: SingleChildScrollView(
+                      child: Container(
+              height: 630.0,
+              width: 500.0,
+              color: Colors.blue,
+              child: Column(
+                children: [
+                  Container(
+                    height: 300.0,
+                    width: 500.0,
+                    color: Colors.white,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          top: 20.0,
+                          left: 5.0,
+                          child: IconButton(
+                              icon: Icon(
+                                Icons.menu,
+                                color: Color(0xff50048e),
+                                size: 50.0,
                               ),
-                              fontSize: 25.0,
-                              fontWeight: FontWeight.bold),
+                              onPressed: () {
+                                _globalKey.currentState.openDrawer();
+                              }),
                         ),
-                      ),
-                      Positioned(
-                        top: 250,
-                        left: 20,
-                        child: Container(
-                            height: 40.0,
-                            width: 300.0,
-                            decoration: BoxDecoration(
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.grey, offset: Offset(1, 2))
-                                ],
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(10.0)),
-                            child: TextFormField(
-                              decoration: InputDecoration(
-                                  contentPadding: EdgeInsets.only(left: 15.0),
-                                  hintText: "Search",
-                                  border: OutlineInputBorder(
-                                      borderRadius:
-                                          BorderRadius.circular(10.0)),
-                                  suffixIcon: Icon(
-                                    Icons.search,
-                                    color: Colors.black,
-                                  )),
-                            )),
-                      ),
-                      Positioned(
-                        top: 50.0,
-                        left: 180.0,
-                        child: Container(
-                          height: 150.0,
-                          width: 150.0,
-                          child: Image.asset('asset/icon.JPG'),
-                        ),
-                      ),
-                      Positioned(
-                        top: 205.0,
-                        left: 180.0,
-                        child: Container(
-                          height: 40.0,
-                          width: 140.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            gradient: LinearGradient(
-                                colors: [Color(0xff50048e), Color(0xffb308c1)]),
-                          ),
-                          child: Center(
-                              child: Text(
-                            "100 xs",
+                        Positioned(
+                          top: 120,
+                          left: 20,
+                          child: Text(
+                            "Hello\ntr\nWelcome back",
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Color(
+                                  0xff733d77,
+                                ),
+                                fontSize: 25.0,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Positioned(
+                          top: 250,
+                          left: 20,
+                          child: Container(
+                              height: 40.0,
+                              width: 300.0,
+                              decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey, offset: Offset(1, 2))
+                                  ],
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(10.0)),
+                              child: TextFormField(
+                                decoration: InputDecoration(
+                                    contentPadding: EdgeInsets.only(left: 15.0),
+                                    hintText: "Search",
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0)),
+                                    suffixIcon: Icon(
+                                      Icons.search,
+                                      color: Colors.black,
+                                    )),
+                              )),
+                        ),
+                        Positioned(
+                          top: 50.0,
+                          left: 180.0,
+                          child: Container(
+                            height: 150.0,
+                            width: 150.0,
+                            child: Image.asset('asset/icon.JPG'),
+                          ),
+                        ),
+                        Positioned(
+                          top: 205.0,
+                          left: 180.0,
+                          child: Container(
+                            height: 40.0,
+                            width: 140.0,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10.0),
+                              gradient: LinearGradient(
+                                  colors: [Color(0xff50048e), Color(0xffb308c1)]),
+                            ),
+                            child: Center(
+                                child: Text(
+                              "100 xs",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20.0),
+                            )),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 330.0,
+                    width: 500.0,
+                    color: Colors.white,
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 330.0,
+                          height: 30.0,
+                          child: Text(
+                            "Access Picks",
+                            style: TextStyle(
+                                color: Color(0xff50048e),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20.0),
-                          )),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  height: 330.0,
-                  width: 500.0,
-                  color: Colors.white,
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 330.0,
-                        height: 30.0,
-                        child: Text(
-                          "Access Picks",
-                          style: TextStyle(
-                              color: Color(0xff50048e),
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                        Container(
+                          
+                            constraints: BoxConstraints.expand(
+                          height: 130,  
                         ),
-                      ),
-                      Container(
-                        color: Colors.red,
-                          constraints: BoxConstraints.expand(
-                        height: 130,  
-                      ),
-                      child: BannerView(),),
-                      SizedBox(height: 10.0,),
-                       Container(
-                        width: 330.0,
-                        height: 30.0,
-                        child: Text(
-                          "Hot Coupons",
-                          style: TextStyle(
-                              color: Color(0xff50048e),
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20.0),
+                        child: Center(child: BannerView()),),
+                        SizedBox(height: 10.0,),
+                         Container(
+                          width: 330.0,
+                          height: 30.0,
+                          child: Text(
+                            "Hot Coupons",
+                            style: TextStyle(
+                                color: Color(0xff50048e),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20.0),
+                          ),
                         ),
-                      ),
-                      Container(height: 130.0,
-                      child: OffersView(),)
-                    ],
-                  ),
-                )
-              ],
+                        Container(height: 100.0,
+                        padding: EdgeInsets.all(10.0),
+                        child: OffersView(),)
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           )),
     );

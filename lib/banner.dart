@@ -35,7 +35,7 @@ class _BannerViewState extends State<BannerView> {
       if(snapshot.hasError){
         print("Error" + snapshot.error.toString());
       }
-      return snapshot.hasData ? View(lists: snapshot.data,):Text("Loading...");
+      return snapshot.hasData ? View(lists: snapshot.data,):Center(child: Text("Loading..."));
     });
   }
 }
